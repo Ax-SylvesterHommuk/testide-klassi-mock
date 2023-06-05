@@ -3,6 +3,16 @@ interface Adder{
     getSum():number;
 }
 
+class CharCounter{
+    constructor(protected adder:Adder){}
+    addWordCharacters(word:string):void{
+        this.adder.add(word.length);
+    }
+    getCharacterCount(){
+        return this.adder.getSum();
+    }
+}
+
 class SimpleAdder implements Adder{
     protected sum:number=0;
     add(nr:number){this.sum+=nr;}
@@ -12,6 +22,8 @@ class SimpleAdder implements Adder{
 }
 
 let adder1:Adder=new SimpleAdder();
-adder1.add(3);
-adder1.add(5);
-console.log(adder1.getSum());
+let counter1:CharCounter=new CharCounter(adder1);
+counter1.addWordCharacters("Juku");
+counter1.addWordCharacters("tuli");
+counter1.addWordCharacters("kooli");
+console.log(counter1.getCharacterCount());
