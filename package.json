@@ -1,0 +1,26 @@
+{
+  "name": "testide-klassi-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ax-SylvesterHommuk/testide-klassi-mock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ax-SylvesterHommuk/testide-klassi-mock/issues"
+  },
+  "homepage": "https://github.com/Ax-SylvesterHommuk/testide-klassi-mock#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.2",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.3"
+  }
+}
